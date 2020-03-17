@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            font-size: 20px;
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+        }
+        .wrap{
+            max-width: 600px;
+            margin: 50px auto;
+            display: flex;
+            justify-content: space-around;
+        }
+        .wrap ul:nth-child(2){
+            list-style-type: circle;
+        }
+        .wrap ul:nth-child(3){
+            list-style-type:square;
+        }
+        .wrap ol:nth-child(1){
+            list-style-type: lower-alpha;
+        }
+        .wrap ol:nth-child(2){
+            list-style-type: upper-roman;
+        }
+         
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <ul>
+            <li>Item #1</li>
+            <li>Item #2</li>
+            <li>Item #3</li>
+        </ul>
+        <ul>
+            <li>Item #1</li>
+            <li>Item #2</li>
+            <li>Item #3</li>
+        </ul>
+        <ul>
+            <li>Item #1</li>
+            <li>Item #2</li>
+            <li>Item #3</li>
+        </ul>
+        <ol>
+            <li>Item #1</li>
+            <li>Item #2</li>
+            <li>Item #3</li>
+        </ol>
+    </div>
+    <div class="wrap">
+        <ol>
+            <li>Item #1</li>
+            <li>Item #2</li>
+            <li>Item #3</li>
+        </ol>
+        <ol>
+            <li>Item #1</li>
+            <li>Item #2</li>
+            <li>Item #3</li>
+        </ol>
+        <ol start="5">
+            <li>Item #1</li>
+            <li>Item #2</li>
+            <li>Item #3</li>
+        </ol>
+        <ol start="7" reversed>
+            <li>Item #1</li>
+            <li>Item #2</li>
+            <li>Item #3</li>
+        </ol>
+    </div>
+</body>
+</html>
