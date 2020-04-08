@@ -22,6 +22,7 @@ class AmericanLeagueCentral extends AmericanLeague {
 class AmericanLeagueWest extends AmericanLeague {
 }
 
+
 // Warhammer
 
 let d = {
@@ -50,9 +51,7 @@ class Unit {
             default: types = ['other type'];
         }
         
-        
-        
-        types[''].name = this.name;
+        types.name = this.name;
         types.price = this.price;
         types.arsenal = this.arsenal;
 
