@@ -16,23 +16,27 @@
                     <a href="./addTask.html" class="add_task"><span>new task &emsp; &#9997;</span></a>
                 </header> 
                 <main class="main_tasks">
-                    <span class="task_list">make home works</span>
-                    <span class="task_list">make home work</span>
-                    <span class="task_list">make home work</span>
-                    <span class="task_list">make home work</span>
-                    <span class="task_list">make home works</span>
-                    <span class="task_list">make home work</span>
-                    <span class="task_list">make home work</span>
-                    <span class="task_list">make home work</span>
-                    <span class="task_list">make home works</span>
-                    <span class="task_list">make home work</span>
-                    <span class="task_list">make home work</span>
-                    <span class="task_list">make home work</span>
-                    <span class="task_list">make home works</span>
-                    
-                </main>
+                    <ul>
+                        <li class="task_list"><a href="./editTask.html">make home work 1</a><span class="remove_task">&#10060;</span></li>
+                        <li class="task_list">make home work 2<span class="remove_task">&#10060;</span></li>
+                        <li class="task_list">make home work 3<span class="remove_task">&#10060;</span></li>
+                        <li class="task_list">make home work 4<span class="remove_task">&#10060;</span></li>
+                        <li class="task_list">make home work 5<span class="remove_task">&#10060;</span></li>
+                    </ul>
+                 </main>
             </div>
         </div>
     </div>
+
+<script>
+    let mainTasks = document.querySelector('.main_tasks');
+    mainTasks.addEventListener('click', (e) => {
+        let target = event.target;
+        if(target.classList.contains('remove_task')) {
+            target.closest('li').remove();
+        }
+    })
+</script>
+
 </body>
 </html>
