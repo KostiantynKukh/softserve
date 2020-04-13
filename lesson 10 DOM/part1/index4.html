@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>Text block No1</div>
+    <p>Paragraph No1</p>      
+    <p>Paragraph No2</p>      
+    <div>Text block No2</div>      
+    <p>Paragraph No3</p>
+    <script>
+        let allElements = document.body.children;
+        let pElements = [];
+        
+        for(i=0; i<allElements.length; i++) {
+            allElements[i].tagName == 'P' ? pElements.push(allElements[i]) : '';
+        }
+        console.log(pElements);        
+    </script>
+</body>
+</html>

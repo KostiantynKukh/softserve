@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="authForm">
+        Username:<br />
+        <input type="text" name="log" /><br />
+        Password:<br />
+        <input type="text" name="pass" /><br />
+        <button name="signIn">SignIn</button>
+    </form>
+    <script>
+        let form = document.forms.authForm;
+        console.log(form);
+        let form1 = document.forms[0];
+        console.log(form1);
+        let input = form.log;
+        console.log(input);
+        let but = form.signIn;
+        console.log(but);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form name="search">
+        <label>Поиск по сайту: 
+            <input type="text" name="search" />
+        </label>
+        <input type="submit" value="Искать!" />
+    </form> 
+
+    <hr />  
+
+    <form name="search-person">
+        Поиск по посетителям:
+        <table id="age-table">
+            <tr>               
+                <td>Возраст:</td>
+                <td id="age-list">
+                    <label>
+                        <input type="radio" name="age" value="young" />до 18
+                    </label>
+                    <label>
+                        <input type="radio" name="age" value="mature" />18-50
+                    </label>
+                    <label>
+                        <input type="radio" name="age" value="senior" />более 50
+                    </label>
+                </td>
+            </tr>            
+            <tr>
+                <td>Дополнительно:</td>
+                <td>
+                    <input type="text" name="info[0]" />
+                    <input type="text" name="info[1]" />
+                    <input type="text" name="info[2]" />               
+                </td>            
+            </tr>         
+        </table>
+        <input type="submit" value="Искать!" />      
+    </form>
+
+    <script>
+        let table = document.getElementById('age-table');
+        let label = table.getElementsByTagName('label');
+        console.log(label);
+        
+        let firstId = table.rows[0].cells[0];
+        console.log(firstId);
+        
+        let secondForm = document.forms[1];
+        console.log(secondForm);
+
+        let searchForm = document.forms.search;
+        console.log(searchForm);
+
+        let searchInput = searchForm.search;
+        console.log(searchInput);
+        
+        let elemInfo0 = document.getElementsByName('info[0]')[0];
+        console.log(elemInfo0);
+        
+        let searchPerson = document.getElementsByName('search-person')[0];
+        let info0 = searchPerson.firstElementChild.rows[1].cells[1].firstElementChild;
+        console.log(info0);
+        
+    </script>
+</body>
+</html>
